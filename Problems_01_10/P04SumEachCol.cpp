@@ -8,7 +8,7 @@ using namespace std;
 const short COLS = 3;
 const short ROWS = 3;
 
-int generate_random_number(int from, int to){
+short generate_random_number(int from, int to){
     return rand() % (to - from + 1) + from;
 }
 void fill_matrix_with_random_numbers(short matrix[ROWS][COLS], short rows, short cols){
