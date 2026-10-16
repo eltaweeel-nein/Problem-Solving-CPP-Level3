@@ -9,7 +9,7 @@ const short COLS = 3;
 
 void fill_matrix_with_ordered_numbers(int matrix[ROWS][COLS], int rows, int cols){
     short counter = 0;
-    for(int row = 0; row < rows; rows++){
+    for(int row = 0; row < rows; row++){
         for (int col = 0; col < cols; col++){
             counter++;
             matrix[row][col]= counter;
