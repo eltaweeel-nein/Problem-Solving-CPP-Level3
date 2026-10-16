@@ -20,6 +20,7 @@ void fill_matrix_with_random_numbers(int matrix[ROWS][COLS], int rows, int cols)
         }
     }
 }
+
 void print_matrix(int matrix[ROWS][COLS], int rows, int cols){
     for (int row = 0; row < rows; row++){
         for (int col = 0; col < cols; col++){
@@ -28,13 +29,15 @@ void print_matrix(int matrix[ROWS][COLS], int rows, int cols){
         cout << endl;
     }
 }
+
 int sum_each_col(int matrix[ROWS][COLS], int col_number, int rows){
     int sum = 0;
     for(int row = 0; row < rows; row++){
         sum = sum + matrix[row][col_number];
     }
-    return sum;
+    return sum; 
 }
+
 void print_each_col_sum(int matrix[ROWS][COLS], int rows, int cols){
     for(int i = 0; i < rows; i++){
         cout << "Col " << i + 1 << " Sum = " << sum_each_col(matrix, i, rows) << endl;
