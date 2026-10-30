@@ -26,7 +26,6 @@ void print_matrix(int matrix[ROWS][COLS], int rows, int cols){
 
 int main(){
     int matrix[ROWS][COLS];
-    int array[ROWS];
     int rows = 3;
     int cols = 3;
     fill_matrix_with_ordered_numbers(matrix, rows, cols);
