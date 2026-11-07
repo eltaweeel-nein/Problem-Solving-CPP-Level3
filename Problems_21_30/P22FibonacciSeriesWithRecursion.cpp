@@ -24,6 +24,7 @@ void print_fibonacci(int number, int prev1, int prev2){
     }
 }
 int main(){
+    cout << "The soluttion using loop" << endl;
     print_fibonacci_using_recursion(10, 0, 1);
     cout << "Other solution " << endl;
     print_fibonacci(10, 0, 1);
