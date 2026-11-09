@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-// read the string from the user 
+
 string read_string(){
     string text;
     cout << "Please enter a string: " << endl;
