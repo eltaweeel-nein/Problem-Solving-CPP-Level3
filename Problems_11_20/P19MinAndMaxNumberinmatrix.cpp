@@ -34,7 +34,7 @@ int min_number(int matrix[ROWS][COLS], int rows, int cols) {
         }
     }
     return min_val;
-}
+} 
 
 int max_number(int matrix[ROWS][COLS], int rows, int cols) {
     int maxi_number = matrix[0][0];
