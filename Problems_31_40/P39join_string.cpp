@@ -8,7 +8,7 @@ string join_strin(vector <string>& words, string delim){
     for(string word : words){
         text = text + word + delim;
     }
-    return text.substr(0, text.length()-1);
+    return text.substr(0, text.length()-delim.length());
 }
 int main(){
 
