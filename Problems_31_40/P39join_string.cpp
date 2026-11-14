@@ -3,9 +3,9 @@
 #include <vector>
 
 using namespace std;
-string join_strin(vector <string>& words, string delim){
+string join_string(vector <string>& words, string delim){
     string text = "";
-    for(string word : words){
+    for(string &word : words){
         text = text + word + delim;
     }
     return text.substr(0, text.length()-delim.length());
@@ -13,7 +13,7 @@ string join_strin(vector <string>& words, string delim){
 int main(){
 
     vector <string> words = {"Ahmed", "Ibrahim", "Eltaweel", "Fathy"};
-    string text = join_strin(words, " ");
+    string text = join_string(words, " ");
     cout << "This is the string: " << endl;
     cout << text;
     return 0;
