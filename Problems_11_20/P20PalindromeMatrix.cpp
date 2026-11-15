@@ -1,9 +1,8 @@
 #include <iostream>
-#include <string>
 #include <iomanip>
 #include <cstdlib>
 using namespace std;
-const int ROWS = 3;
+const int ROWS = 3; 
 const int COLS = 3;
 
 int generate_random_number(int from, int to) {
