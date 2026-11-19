@@ -10,7 +10,6 @@ string read_string(){
     getline(cin, text);
     return text;
 }
-
 void split_words(string text, vector<string>& words){
     string delim = " ";
     int position = 0;
@@ -31,7 +30,6 @@ void reverso_words(vector<string>& words, vector<string>& reverse_words){
         reverse_words.push_back(words[i-1]);
     }
 }
-
 string string_elements(vector <string> & words, string delim){
     string text = "";
     for(string& word: words){
@@ -39,7 +37,28 @@ string string_elements(vector <string> & words, string delim){
     }
     return text.substr(0,text.length()-delim.length());
 }
-
+vector <string> split_words(string text, string delim){
+    vector <string> words;
+    int postition = 0;
+    string word =  "";
+    while((postition=text.find(delim)) != string::npos){
+        word = text.substr(0, postition);
+        if (word != " "){
+            words.push_back(word);
+        }
+    }
+}
+string reverse_words(string text){
+    vector <string> words;
+    string words2 = "";
+    words = split_words(text, " ");
+    vector <string>::iterator iter = words.end();
+    while(iter != words.begin()){
+        --iter;
+        words2 += *iter + " ";
+    }
+    words2 = words2.substr(0, words2.length() - 1);
+}
 int main(){
     vector <string> words;
     vector <string> reverse_words;
